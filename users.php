@@ -7,7 +7,7 @@ $users = [
     ['id' => 4, 'name' => 'Patrick McReary'],
 ];
 
-$data_to_send = [
+$data = [
     "status" => 200,
     "message" => "OK",
     "payload" => $users
@@ -15,7 +15,7 @@ $data_to_send = [
 
 http_response_code(200);
 header('Content-Type: application/json');
-echo json_encode($data_to_send);
+echo json_encode($data);
 exit;
 
 ?>
